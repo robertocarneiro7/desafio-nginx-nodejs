@@ -19,7 +19,7 @@ services:
     hostname: nodeapp
     entrypoint: dockerize -wait tcp://desafio-node-db:3306 -timeout 20s docker-entrypoint.sh
     volumes:
-      - ./node:/usr/src/app
+      - ./node:/workdir
     tty: true
     depends_on:
       - desafio-node-db

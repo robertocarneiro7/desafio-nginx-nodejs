@@ -4,6 +4,8 @@
   "description": "Nesse desafio você colocará em prática o que aprendemos em relação a utilização do nginx como proxy reverso. A idéia principal é que quando um usuário acesse o nginx, o mesmo fará uma chamada em nossa aplicação node.js. Essa aplicação por sua vez adicionará um registro em nosso banco de dados mysql, cadastrando um nome na tabela people.\nO retorno da aplicação node.js para o nginx deverá ser:\n\n<h1>Full Cycle Rocks!</h1>\n\n- Lista de nomes cadastrada no banco de dados.",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
